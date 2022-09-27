@@ -26,7 +26,7 @@ handler.cgi_directories = ["/"]
  
 httpd = Server(server_address, handler)
 print("Server listening on http://{}:{}".format(
-    httpd.server_name,
+    "localhost",
     httpd.server_port
 ))
 httpd.serve_forever()
